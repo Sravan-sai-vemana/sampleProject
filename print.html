@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Form</title>
+    <style>
+        @media print {
+            /* Define print styles here */
+            body {
+                font-size: 12pt;
+            }
+            /* Add more styles as needed for printing */
+        }
+    </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <!-- Your form elements go here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <!-- Add more form elements as needed -->
+
+        <button type="button" onclick="printForm()">Print Form</button>
+    </form>
+
+    <script>
+        function printForm() {
+            // Open a new window and print the form
+            var printWindow = window.open('', '_blank');
+            printWindow.document.write('<html><head><title>Print Form</title></head><body>');
+            printWindow.document.write(document.getElementById('myForm').outerHTML);
+            printWindow.document.write('</body></html>');
+        }
+    </script>
+
+</body>
+</html>

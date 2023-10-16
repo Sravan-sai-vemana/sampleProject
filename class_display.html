@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;
+            }
+
+            li {
+            float: left;
+            }
+
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            li a:hover {
+            background-color: #111;
+            }
+
+            .active {
+            background-color: #4CAF50;
+            }
+            #tab{
+                background-color: #333;
+                padding: 0.7cm;
+                border-spacing: 0.25cm;
+                border-radius: 0.5cm;
+                font-size: 0.7cm;
+            }
+            td{
+                background-color: white;
+                color: #333;
+                border-radius: 4px;
+                width: 80px;
+                padding: 10px;
+            }
+            th{
+                background-color: #4CAF50;
+                padding: 0.7cm;
+                border-spacing: 0.25cm;
+                border-radius: 0.5cm;
+                font-size: 0.7cm;
+                color: white;
+            }
+            #PG{
+                width: 1cm;
+                height: 1cm;
+                background-color: #4CAF50;
+                float: left;
+            }
+            #signal{
+                float: right;
+            }
+            #PGt{
+                float: right;
+            }
+            #G{
+                background-color: #4CAF50;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="/class_info.html">Home</a></li>
+            <li><a href="/class_permission.html">Permission Manager</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div>
+            <center>
+                <table>
+                    <tr>
+                        <th>'+req.query.year+'-year/'+req.query.branch+'</td>
+                    </tr>
+                </table>
+            </center>
+                <div id="signal">
+                    <div id="PG"></div>
+                    <div id="PGt"><p>Permission Granted</p></div>
+                </div>
+            <center>
+                <table id="tab">
+                    <tr>
+                        '+temp+'
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </body>
+</html>
+
+

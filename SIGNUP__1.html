@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <style>
+            div {
+                border: 5px solid green;
+                border-radius: 10cm;
+                width: 10cm;
+            }
+            h1{
+                color: green;
+            }
+            label{
+                color: white;
+                background-color: green;
+                border-radius: 4px;
+            }
+            button{
+                border: 2px solid green;
+                border-radius: 5px;
+                color: green;
+                background-color: white;
+            }
+            button:hover
+            {
+                color: white;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div>
+                <center>
+                    <h1>Student</h1>
+                    <h1>SIGN UP</h1>
+                    <form action="/studentsignupsubmit" method="GET">
+                        <label>Username :</label>
+                        <input type="text" name="upuser">
+                        <br><br>
+                        <label>Password :</label>
+                        <input type="password" name="uppass">
+                        <br><br>
+                        <button type="submit">Sign up</button>
+                        <br><br>
+                    </form>
+                </center>
+            </div>
+        </center>
+    </body>
+</html>

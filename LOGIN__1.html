@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log In</title>
+        <style>
+            .block {
+                border: 5px solid green;
+                border-radius: 10cm;
+                width: 10cm;
+            }
+            h1{
+                color: green;
+            }
+            label{
+                color: white;
+                background-color: green;
+                border-radius: 4px;
+            }
+            button{
+                border: 2px solid green;
+                border-radius: 5px;
+                color: green;
+                background-color: white;
+            }
+            button:hover
+            {
+                color: white;
+                background-color: green;
+            }
+            .subblock{
+                width: 50%;
+            }
+            #block1{
+                float: left;
+                margin: 1cm;
+            }
+            #block2{
+                float: right;
+                margin: 1cm;
+            }
+            a{
+                text-decoration: none;
+                border: 2px solid green;
+                border-radius: 5px;
+                color: green;
+                background-color: white;
+            }
+            a:hover
+            {
+                color: white;
+                background-color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+                <div class="block" id="block1">
+                    <center>
+                        <h1>HOD</h1>
+                        <h1>LOG IN</h1>
+                        <form action="/hodloginsubmit" method="GET">
+                            <label>Username :</label>
+                            <input type="text" name="inuser">
+                            <br><br>
+                            <label>Password :</label>
+                            <input type="password" name="inpass">
+                            <br><br>
+                            <button type="submit">Log In</button>
+                            <br><br>
+                        </form>
+                    </center>
+                </div>
+                <div class="block" id="block2">
+                    <center>
+                        <h1>Student</h1>
+                        <h1>LOG IN</h1>
+                        <form action="/studentloginsubmit" method="get">
+                            <label>Username :</label>
+                            <input type="text" name="inuser">
+                            <br><br>
+                            <label>Password :</label>
+                            <input type="password" name="inpass">
+                            <br><br>
+                            <button type="submit">Log In</button>
+                            <br><br>
+                        </form>
+                        <a href="/studentsignup" >Sign up</a>
+                    </center>
+                </div>
+    </body>
+</html>
